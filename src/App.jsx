@@ -8,6 +8,16 @@ function App() {
     hair: "blonde",
     height: 1.73,
   };
+  // В пропсы можно передавать один объект с информацией о профиле вместо множества разных пропсов
+  // const profileSlimShady = {
+  //   avatarLink:
+  //     "https://www.eminem.pro/wp-content/uploads/2015/11/Eminem-Slim-Shady-1999.jpg",
+  //   profileName: "Slim",
+  //   profileSurname: "Shady",
+  //   career: "rapper",
+  //   characteristic,
+  //   hobby: "reading comics",
+  // };
 
   return (
     <div className="App" id={tagJobId}>
