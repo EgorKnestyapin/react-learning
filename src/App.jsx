@@ -1,10 +1,11 @@
 import "./App.css";
-import Lesson18 from "./lessons/lesson18";
+import Counter from "./components/Counter";
 
 function App() {
   return (
     <div className="App">
-      <Lesson18 />
+      {/* <Lesson18 /> */}
+      <Counter />
     </div>
   );
 }
