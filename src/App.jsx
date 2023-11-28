@@ -1,11 +1,13 @@
 import "./App.css";
-import Counter from "./components/Counter";
+import Lesson19 from "./lessons/lesson19";
 
 function App() {
   return (
     <div className="App">
       {/* <Lesson18 /> */}
-      <Counter />
+      <Lesson19 />
+      {/* All our homeworks */}
+      {/* <Counter /> */}
     </div>
   );
 }
