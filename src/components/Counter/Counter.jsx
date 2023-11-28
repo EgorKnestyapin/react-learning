@@ -9,6 +9,7 @@ function Counter() {
       <button
         type="button"
         onClick={() => setCount((prevValue) => prevValue - 1)}
+        className="minus-plus-button"
       >
         -
       </button>
@@ -16,6 +17,7 @@ function Counter() {
       <button
         type="button"
         onClick={() => setCount((prevValue) => prevValue + 1)}
+        className="minus-plus-button"
       >
         +
       </button>
