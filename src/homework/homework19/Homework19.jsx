@@ -12,18 +12,24 @@ function Homework19() {
     isAvailable: true,
   };
   const [object, setObject] = useState({});
+  console.log(Object.keys(object).length);
 
   const mapPorsche = Object.keys(object).map((el) => {
-    return (
-      <li key={`object-items-${el}`}>
-        {el}: {object[el]}
-      </li>
-    );
+    const carContent = () => {
+      if (el === "isAvailable") {
+        if (object[el]) {
+          return "Available";
+        }
+        return "Unavailable";
+      }
+      return `${el}: ${object[el]}`;
+    };
+    return <li key={`object-items-${el}`}>{carContent()}</li>;
   });
 
   return (
     <div className="container">
-      <ul>{mapPorsche}</ul>
+      {!!Object.keys(object).length && <ul>{mapPorsche}</ul>}
       <div className="buttonControl">
         <Button
           name="Добавить машину марки Porsche"
